@@ -1,8 +1,10 @@
 const express = require('express');
-const router = express.Router();
-const getItemController = require('../controllers/getItemController')
+const router = express.Router;
 
 
-router.get('/api/items', getItemController.index)
+/* GET home page. */
+router.get('/', function(req, res, next) {
+    res.render('index', { title: 'Express' });
+  });
 
 module.exports = router;
