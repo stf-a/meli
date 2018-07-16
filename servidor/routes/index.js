@@ -4,7 +4,7 @@ const searchController = require('../controllers/searchController')
 
 
 /* GET home page. */
-router.get('/api/items', searchController.index);
+router.get('/api/items/:id', searchController.index);
 
 
 module.exports = router;
